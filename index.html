@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Landing Page</title>
+</head>
+
+<script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+ <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+
+<script src = "particle.js" defer></script>
+<script src = "main.js" defer></script>
+<body>
+    <div class = "hero" id = "hero">
+        <div id = "canvas-html">
+
+        </div>
+        <div class = "heading">
+            <div id = "heading-one">
+                <h2>Hello, my name is Jovian. </h2>
+            </div>
+            <div id = "heading-two">
+                <h2>I'm a full-stack developer</h2>
+                <h2>and IT Technician.</h2>
+            </div>
+            <a href ="#about-container" class = "heading-link">View Projects</a>
+        </div>
+        
+    </div>
+    <nav class = "nav-container">
+        <ul id = "navigation">
+            <li><a href = "#hero">Home</li>
+            <li><a href = "#about-container">About</a> </li>
+            <li><a href = "#projects-header">Projects</a></li>
+            <li><a href = "#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id = "about-container">
+        <div id = "title-header">
+            <h1>About</h1>
+        </div>
+        
+            <img  id = "about-image" src= "images/jovian.png" height = "400" width = "300">
+       
+        <p id = "about-desc">
+                Fully committed to the philosophy of life-long learning, 
+            I’m a full stack developer with a deep passion for JavaScript, 
+            React and all things web development. The unique combination of creativity, 
+            logic, technology and never running out of new things to discover, drives my 
+            excitement and passion for web development. When I’m not at my computer I 
+            like to spend my time reading, keeping fit and playing guitar.
+        </p>
+      
+    </div>
+    <div class = "skills-container">
+        <div id = "skills-1">
+            <img src = "images/github-icon.png" height = "100" width="100">
+           
+            <img src = "images/node-js-icon.png" height = "100" width="100">
+            <img src = "images/c++-icon.png" height = "100" width="100">
+
+        </div>
+        <div id = "skills-2">
+            <img src = "images/mysql-icon.png" height = "100" width="100">
+            <img src = "images/css-icon.png" height = "100" width="100">
+            <img src = "images/javascript-icon.png" height = "100" width="100">
+        </div>
+    </div>
+    <div id = "projects-header">
+        <h1>Projects</h1>
+    </div>
+    <div class = "project-container">
+        <div class="project-desc">
+            <h1>Racecars with Machine Learning</h1>
+            <p>I wrote an simple neural network in C++. The objective was to 
+                have vehicles be able to navigate a racetrack after several iterations.
+            </p>
+        </div>
+        <div class = "project-links">
+            <a href  = "https://github.com/JovianBrown/RacingV3" >See Code</a>
+        </div>
+        <div class ="project-image">
+            <a href = "https://github.com/JovianBrown/RacingV3">
+                <img src = "images/aicars.jpeg" class ="project-image" height = "320" width="400">
+            </a>
+        </div>
+    </div>   
+        <div class = "project-container">
+            <div class="project-desc">
+                <h1>Drum Sequencer</h1>
+                <p>A drum machine sequencer. Sampled drumkit using 2 SM-58s and a Rhodes NT-1
+                    Coded in vanilla Javascript, CSS and HTML.
+                </p>
+            </div>
+            <div class = "project-links">
+                <a href  = "https://jforodin.github.io/SequencerAndDrumkit/" >Live App</a>
+                <a href  = "https://github.com/JForOdin/SequencerAndDrumkit" >See Code</a>
+            </div>
+            <div class ="project-image">
+                <a href = "https://jforodin.github.io/SequencerAndDrumkit/">
+                    <img src = "images/sequencer.jpeg" class ="project-image" height = "320" width="400">
+                </a>
+            </div>
+        </div>   
+        
+        <div class = "project-container">
+            <div class="project-desc">
+                <h1>Etch-a-Sketch</h1>
+                <p>A super retro and cool Etch-A-Sketch
+                    Written in Javascript, CSS and HTML.
+                </p>
+            </div>
+            <div class = "project-links">
+                <a href  = "https://jforodin.github.io/Etch-a-Sketch/" >Live App</a>
+                <a href  = "https://github.com/JForOdin/Etch-a-Sketch" >See Code</a>
+            </div>
+            <div class ="project-image">
+                <a href = "https://jforodin.github.io/Etch-a-Sketch/">
+                    <img src = "images/etch-a-sketch.png" class ="project-image" height = "320" width="400">
+                </a>
+            </div>
+        </div>   
+        <div class = "footer">
+            Made by <a href = "https://github.com/JovianBrown">Jovian Brown</a> 2023
+        </div>
+    </body>
+</html>
