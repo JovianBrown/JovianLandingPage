@@ -23,19 +23,19 @@
         </div>
         <div class = "heading">
             <div id = "heading-one">
-                <h2>Hello, my name is Jovian. </h2>
+                <h2>Hello, my name is <a>Jovian</a>. </h2>
             </div>
             <div id = "heading-two">
                 <h2>I'm a full-stack developer</h2>
                 <h2>and IT Technician.</h2>
             </div>
-            <a href ="#about-container" class = "heading-link">View Projects</a>
+            <a href ="#about-container" class = "heading-link">See More</a>
         </div>
         
     </div>
     <nav class = "nav-container">
         <ul id = "navigation">
-            <li><a href = "#hero">Home</li>
+            <!-- <li><a href = "#hero">Home</li> -->
             <li><a href = "#about-container">About</a> </li>
             <li><a href = "#projects-header">Projects</a></li>
             <li><a href = "#experience-header">Experience</a></li>
@@ -48,32 +48,38 @@
             <h1>About</h1>
         </div>
         
-            <img  id = "about-image" src= "images/jovian.png" height = "400" width = "300">
+            <img  id = "about-image" src= "images/jovian.png"  width = "170">
            
 
         <p id = "about-desc">
-                Fully committed to the philosophy of life-long learning, 
-            I’m a full stack developer with a deep passion for JavaScript, 
-            React and all things web development. The unique combination of creativity, 
-            logic, technology and never running out of new things to discover, drives my 
-            excitement and passion for web development. When I’m not at my computer I 
-            like to spend my time reading, keeping fit and playing guitar.
+                Fully committed to life-long learning, 
+            I’m a full stack developer and IT technician with a love for JavaScript, 
+            C++, and all things related to development. I have a passion for problem 
+            solving and creativity which drives my excitement for being productive. 
+            I've enjoyed working in places ranging from small start-ups to large enterprises.
+            When I’m not in front of my computer I like to spend my time reading, hanging out with friends and playing music.
         </p>
       
     </div>
     <div class = "skills-container">
-        <div id = "skills-1">
-            <img src = "images/github-icon.png" height = "100" width="100">
-           
-            <img src = "images/node-js-icon.png" height = "100" width="100">
-            <img src = "images/c++-icon.png" height = "100" width="100">
-
-        </div>
-        <div id = "skills-2">
-            <img src = "images/mysql-icon.png" height = "100" width="100">
-            <img src = "images/css-icon.png" height = "100" width="100">
-            <img src = "images/javascript-icon.png" height = "100" width="100">
-        </div>
+            <div class = "skills-div">
+                <img src = "images/github-icon.png" height = "100" width="100">
+            </div>
+            <div class = "skills-div">
+                <img src = "images/node-js-icon.png" height = "100" width="100">
+            </div>
+            <div class = "skills-div">
+                <img src = "images/c++-icon.png" height = "100" width="100">
+            </div>
+            <div class = "skills-div">
+                <img src = "images/mysql-icon.png" height = "100" width="100">
+            </div>
+            <div class = "skills-div">
+                <img src = "images/css-icon.png" height = "100" width="100">
+            </div>
+            <div class = "skills-div">
+                <img src = "images/javascript-icon.png" height = "100" width="100">
+            </div>
     </div>
     <div id = "projects-header">
         <h1>Projects</h1>
@@ -90,7 +96,7 @@
         </div>
         <div class ="project-image">
             <a href = "https://github.com/JovianBrown/RacingV3">
-                <img src = "images/aicars.jpeg" class ="project-image" height = "320" width="400">
+                <img src = "images/aicars.jpeg" class ="project-image" height = "auto" width="400">
             </a>
         </div>
     </div>   
@@ -107,11 +113,27 @@
             </div>
             <div class ="project-image">
                 <a href = "https://jforodin.github.io/SequencerAndDrumkit/">
-                    <img src = "images/sequencer.jpeg" class ="project-image" height = "250" width="400">
+                    <img src = "images/sequencer.jpeg" class ="project-image" height = "auto" width="400">
                 </a>
             </div>
         </div>   
-        
+        <div class = "project-container">
+            <div class="project-desc">
+                <h1>Pixel Art Creator</h1>
+                <p>Wrote a drawing program for making sprites and other small images.
+                    Coded in Javascript, CSS and HTML.
+                </p>
+            </div>
+            <div class = "project-links">
+                <a href  = "https://JovianBrown.github.io/SpriteGen/" >Live App</a>
+                <a href  = "https://github.com/JovianBrown/SpriteGen" >See Code</a>
+            </div>
+            <div class ="project-image">
+                <a href = "https://JovianBrown.github.io/SpriteGen/">
+                    <img src = "images/spritegen.jpeg" class ="project-image" height = "auto" width="400">
+                </a>
+            </div>
+        </div>   
         <div class = "project-container">
             <div class="project-desc">
                 <h1>Etch-a-Sketch</h1>
@@ -125,12 +147,70 @@
             </div>
             <div class ="project-image">
                 <a href = "https://jforodin.github.io/Etch-a-Sketch/">
-                    <img src = "images/etch-a-sketch.png" class ="project-image" height = "320" width="400">
+                    <img src = "images/etch-a-sketch.png" class ="project-image" height = "auto" width="400">
                 </a>
             </div>
         </div>   
         <div id = "experience-header">
             <h1>Experience</h1>
+        </div>
+        <div id = "experience-div">
+            <div class = "experience-item">
+                <h3>IValue - FullStack Dev</h3>
+                <h4>Chengdu - CN, 2021 - 2022</h4>
+                <p>Developed a web platform for the Bee Swarm project that allows easy administration 
+                    and maintenance for over 500 Bee swarm nodes implemented on the AWS backbone in China. 
+                    I wrote a secure platform that served Ivalu’s clients in JAVASCRIPT/PHP/HTML/CSS/MYSQL/</p>
+            </div>
+            <div class = "experience-item">
+                <h3>ActiveNetwork - IT Technician III</h3>
+                <h4>Chengdu - CN, 2015 - 2018</h4>
+                <p>
+                    Spent more than two years supporting ActiveNetwork both remotely and from the office 
+                    in Chengdu with system administration and system engineering. Networks that I maintained 
+                    included Windows-based VMs, and Unix and Mac OS X systems. Day to day user supported included: 
+                    RSA administration for VPNs, ActiveDirectory tasks, Exchange Management Console to handle messaging 
+                    distribution groups as well as user profile permissions.
+                </p>
+            </div>
+            <div class = "experience-item">
+                <h3>Digital Mountain - Frontend Dev</h3>
+                <h4>Chengdu - CN, 2014</h4>
+                <p>
+                    Designed and programmed a location based photo app for Digital Mountain in Java for Android phones.
+                     Application features customer-end review system that focuses on targeting customer needs with messaging 
+                     and GPS data collection.
+                </p>
+            </div>
+            <div class = "experience-item">
+                <h3>World Bridger- Systems Engineer</h3>
+                <h4>Chengdu - CN, 2006 - 2009</h4>
+                <p>
+                    Conceived, planned and implemented the IT backbone as well as implemented and
+                    maintained all Unix servers (security, Apache, mail servers, backup systems and CRM).
+
+                </p>
+            </div>
+            <div class = "experience-item">
+                <h3>Cisco Systems - Network Administrator</h3>
+                <h4>Santa Clara California, 1998 - 2002</h4>
+                <p>
+                    In addition to providing daily network support for many of the hardware engineers at Cisco,
+                     I was also the primary lab contact for various BU’s within the company. Maintained
+                    network connectivity for Build Integration Lab as well as being the primary router 
+                    troubleshooter and spearheading lab security protocols.
+                </p>
+            </div>
+        </div>
+        <div class = "contact" id = "contact">
+            <div id = "contact-header">
+                <h1>Contact</h1>
+            </div>
+            <div>
+                <input type="text" id="email-message">
+               
+            </div>
+            <button>contact me</button>
         </div>
         <div class = "footer">
             Made by <a href = "https://github.com/JovianBrown">Jovian Brown</a> 2023

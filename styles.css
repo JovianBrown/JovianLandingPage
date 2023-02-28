@@ -68,14 +68,25 @@ p {
     flex: 1;
     max-width: 100%;
     max-height: auto;
+    margin-bottom: 20px;
 }
 
 .skills-container {
     display:flex;
     padding:40px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
+}
+.skills-div {
+    margin: 20px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, tomato, #47E3FF) border-box;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    width: 100px;
 }
 #projects-header {
     /* padding-top: 30px; */
@@ -97,15 +108,16 @@ p {
     max-width: fit-content;
     justify-content: flex-end;
     margin: 0px auto;
+    z-index: 1;
 
 }
 .project-image {
-    max-width: 100%;
+    /* max-width: 100%; */
+    max-width: 300px;
     max-height: auto;
     margin-left: 10px;
     border-radius: 10px;
     transition: all 0.25s;
-    z-index: -1;
 }
 .project-image:hover {
     transform: scale(.95) rotate(0.01deg);
@@ -117,12 +129,59 @@ p {
     background-color: #383838;
     opacity:0.85;
     box-shadow:0 4px 4px rgb(0 0 0 / 30%);
-    border-bottom:tomato solid 5px;
+    border-bottom:#ff6347 solid 5px;
     padding: 10px;
     align-items: flex-end;
 
 }
+#experience-header {
+    margin-top: 100px;
+}
+#experience-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: tomato;
+    /* margin: 0px auto; */
+}
+.experience-item {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.experience-item > p {
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    max-width: 400px;
+}
+.experience-item h4 {
+    font-size: x-small;
+    color: darkgray;
+}
+.contact {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin-top: 40px;
+    background-color: tomato;
+    color: #383838;
+    padding: 10px;
+    border-radius: 4px;
+}
+button:hover {
+    color: white;
+    background-color: #383838;
 
+}
+#email-message {
+    width:400px;
+    height: 100px;
+}
 .footer {
     padding-top: 100px;
     margin: 0px auto;
