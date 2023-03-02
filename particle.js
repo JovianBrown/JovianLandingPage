@@ -15,7 +15,6 @@ class Boid
         {
             this.position.add(this.velocity);
             this.velocity.add(p5.Vector.random2D()*.01*this.getNegOrPos());
-            
         }
         
        

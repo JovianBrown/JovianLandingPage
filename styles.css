@@ -1,36 +1,72 @@
+html {
+    scroll-behavior: smooth;
+
+}
 body {
     background-color: #202020;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity:0.95;
+    font-size: calc(3px + 1.3vw);
 }
+
 .hero {
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 .heading {
     position:absolute;
     padding: 20px;
     color: white;
     font-size: larger;
+    text-align: center;
+   
 }
+@keyframes headinglinkanim {
+    from {color: white;}
+   to {color: tomato;} 
+   /* from 
+   {
+       left: 50%;
+   }
+   to 
+   {
+       left: 0;
+   } */
+ }
 .heading-link {
     border:tomato solid 2px;
     padding: 10px;
+    animation-name: headinglinkanim;
+    animation-duration: 4s;
+
 }
 a {
     color:tomato;
+    text-decoration: none;
+    opacity: .7;
 }
 a:hover {
     color:white;
+    opacity: 0.9;
+    transition: 0.3s;
 }
 h1 {
-    /* color:tomato; */
     color:white;
     /* text-shadow: -1px 0 #4FF3FF, 0 2px #4FF3FF, 2px 0 #4FF3FF, 0 -1px #4FF3FF; */
     /* text-shadow: -1px 0 darkgray, 0 2px darkgray, 2px 0 darkgray, 0 -1px darkgray; */
     text-align: center;
+   
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+   
 }
+h2 {
+    text-align: center;
+}
+
 p {
     text-align: center;
 }
@@ -40,9 +76,10 @@ p {
     justify-content: flex-end;
     position: sticky;
     top: 0;
+    padding-right: 20px;
     box-shadow:0 4px 4px rgb(0 0 0 / 30%);
      opacity:0.95; 
-    z-index: 1;
+    z-index: 2;
 
 }
 #navigation {
@@ -76,9 +113,9 @@ p {
     padding:40px;
     flex-direction: row;
     flex-wrap: wrap;
-
     justify-content: center;
-    
+    width: 50%;
+    margin: 0px auto;
 }
 .skills-div {
     margin: 20px;
@@ -88,21 +125,21 @@ p {
     border: 2px solid transparent;
     width: 100px;
 }
-#projects-header {
-    /* padding-top: 30px; */
 
+#project-header {
+    margin-bottom: -120px;
+    padding-top: 50px;
 }
 .project-container {
     color: white;
     display: flex;
     flex-direction: column;
-    /* opacity:0.85; */
 }
 .project-desc {
     position:relative;
     top: 300px;
     background-color: #383838;
-    opacity:0.85;
+    opacity:0.75;
     box-shadow:0 4px 4px rgb(0 0 0 / 30%);
     padding: 10px;
     max-width: fit-content;
@@ -120,7 +157,8 @@ p {
     transition: all 0.25s;
 }
 .project-image:hover {
-    transform: scale(.95) rotate(0.01deg);
+    transform: scale(1.10) rotate(0.01deg);
+
 }
 .project-links {
     position:relative;
@@ -135,6 +173,7 @@ p {
 
 }
 #experience-header {
+    padding-top: 50px;
     margin-top: 100px;
 }
 #experience-div {
@@ -142,6 +181,9 @@ p {
     flex-direction: column;
     justify-content: center;
     color: tomato;
+    padding-left: 50px;
+    padding-right: 50px;
+
     /* margin: 0px auto; */
 }
 .experience-item {
@@ -172,11 +214,13 @@ button {
     color: #383838;
     padding: 10px;
     border-radius: 4px;
+    opacity: 0.75;
 }
 button:hover {
-    color: white;
-    background-color: #383838;
-
+    /* color: white; */
+    /* background-color: #383838; */
+    opacity: 1.0;
+    transition: 0.5s;
 }
 #email-message {
     width:400px;
@@ -196,5 +240,22 @@ button:hover {
 (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior:smooth;
+
+  }
+}
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        justify-content: center;
+        font-size: large;
+  }
+  .skills-div {
+      width: 50px;
+      height: auto;
+      border-radius: 10px;
+
+  }
+  .skills-div > img {
+      width: 50px;
+      height: auto;
   }
 }

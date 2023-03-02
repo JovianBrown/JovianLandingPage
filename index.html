@@ -9,8 +9,8 @@
     <title>Landing Page</title>
 </head>
 
-<script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
- <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+<!-- <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script> -->
+ <!-- <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
 
@@ -37,7 +37,7 @@
         <ul id = "navigation">
             <!-- <li><a href = "#hero">Home</li> -->
             <li><a href = "#about-container">About</a> </li>
-            <li><a href = "#projects-header">Projects</a></li>
+            <li><a href = "#project-header">Projects</a></li>
             <li><a href = "#experience-header">Experience</a></li>
 
             <li><a href = "#contact">Contact</a></li>
@@ -53,8 +53,8 @@
 
         <p id = "about-desc">
                 Fully committed to life-long learning, 
-            I’m a full stack developer and IT technician with a love for JavaScript, 
-            C++, and all things related to development. I have a passion for problem 
+            I’m a <strong>full stack developer and IT technician</strong> with a love for <strong>JavaScript, 
+            C++</strong>, and all things related to development. I have a passion for problem 
             solving and creativity which drives my excitement for being productive. 
             I've enjoyed working in places ranging from small start-ups to large enterprises.
             When I’m not in front of my computer I like to spend my time reading, hanging out with friends and playing music.
@@ -81,12 +81,12 @@
                 <img src = "images/javascript-icon.png" height = "100" width="100">
             </div>
     </div>
-    <div id = "projects-header">
+    <div id = "project-header">
         <h1>Projects</h1>
     </div>
     <div class = "project-container">
         <div class="project-desc">
-            <h1>Racecars with Machine Learning</h1>
+            <h2>Machine Learning Race Cars</h2>
             <p>I wrote an simple neural network in C++. The objective was to 
                 have vehicles be able to navigate a racetrack after several iterations.
             </p>
@@ -102,7 +102,7 @@
     </div>   
         <div class = "project-container">
             <div class="project-desc">
-                <h1>Drum Sequencer</h1>
+                <h2>Drum Sequencer</h2>
                 <p>A drum machine sequencer. Sampled drumkit using 2 SM-58s and a Rhodes NT-1
                     Coded in vanilla Javascript, CSS and HTML.
                 </p>
@@ -119,7 +119,7 @@
         </div>   
         <div class = "project-container">
             <div class="project-desc">
-                <h1>Pixel Art Creator</h1>
+                <h2>Pixel Art Creator</h2>
                 <p>Wrote a drawing program for making sprites and other small images.
                     Coded in Javascript, CSS and HTML.
                 </p>
@@ -136,7 +136,7 @@
         </div>   
         <div class = "project-container">
             <div class="project-desc">
-                <h1>Etch-a-Sketch</h1>
+                <h2>Etch-a-Sketch</h2>
                 <p>A super retro and cool Etch-A-Sketch
                     Written in Javascript, CSS and HTML.
                 </p>
@@ -158,26 +158,26 @@
             <div class = "experience-item">
                 <h3>IValue - FullStack Dev</h3>
                 <h4>Chengdu - CN, 2021 - 2022</h4>
-                <p>Developed a web platform for the Bee Swarm project that allows easy administration 
-                    and maintenance for over 500 Bee swarm nodes implemented on the AWS backbone in China. 
-                    I wrote a secure platform that served Ivalu’s clients in JAVASCRIPT/PHP/HTML/CSS/MYSQL/</p>
+                <p>Developed a web platform for the Bee Swarm decentralized storage project that allows easy administration 
+                    and maintenance for over 500 nodes. Implemented on 100 <strong>Amazon Cloud</strong> instances.
+                    A secure platform that served Ivalu’s clients utilizing JAVASCRIPT/PHP/HTML/CSS/MYSQL/</p>
             </div>
             <div class = "experience-item">
                 <h3>ActiveNetwork - IT Technician III</h3>
                 <h4>Chengdu - CN, 2015 - 2018</h4>
                 <p>
                     Spent more than two years supporting ActiveNetwork both remotely and from the office 
-                    in Chengdu with system administration and system engineering. Networks that I maintained 
-                    included Windows-based VMs, and Unix and Mac OS X systems. Day to day user supported included: 
-                    RSA administration for VPNs, ActiveDirectory tasks, Exchange Management Console to handle messaging 
+                    in Chengdu with <strong>system administration and system engineering </strong>. Networks that I maintained 
+                    included <strong>Windows-based VMs, and Unix and Mac OS X </strong>systems. Day to day user supported included: 
+                    Network performance troubleshooting, RSA administration for VPNs, ActiveDirectory tasks, Exchange Management Console to handle messaging 
                     distribution groups as well as user profile permissions.
                 </p>
             </div>
             <div class = "experience-item">
                 <h3>Digital Mountain - Frontend Dev</h3>
-                <h4>Chengdu - CN, 2014</h4>
+                <h4>Chengdu - CN, 2013</h4>
                 <p>
-                    Designed and programmed a location based photo app for Digital Mountain in Java for Android phones.
+                    Our team coded a location based photo app for Digital Mountain in <strong>Java</strong> for Android phones.
                      Application features customer-end review system that focuses on targeting customer needs with messaging 
                      and GPS data collection.
                 </p>
@@ -186,16 +186,15 @@
                 <h3>World Bridger- Systems Engineer</h3>
                 <h4>Chengdu - CN, 2006 - 2009</h4>
                 <p>
-                    Conceived, planned and implemented the IT backbone as well as implemented and
-                    maintained all Unix servers (security, Apache, mail servers, backup systems and CRM).
-
+                    Helped plan and implement the companies internal IT services as well as implemented and
+                    maintained all the backend Unix servers (security, Apache, mail servers, backup systems and CRM).
                 </p>
             </div>
             <div class = "experience-item">
                 <h3>Cisco Systems - Network Administrator</h3>
                 <h4>Santa Clara California, 1998 - 2002</h4>
                 <p>
-                    In addition to providing daily network support for many of the hardware engineers at Cisco,
+                    In addition to providing daily <strong>network administration</strong> for many of the hardware engineers at Cisco,
                      I was also the primary lab contact for various BU’s within the company. Maintained
                     network connectivity for Build Integration Lab as well as being the primary router 
                     troubleshooter and spearheading lab security protocols.

@@ -60,10 +60,8 @@ const drawBoids = () => {
                         {                           //draw a line between the two 
                             /// need to draw a skinny line form i to j
                             connectBoid(boids[i],boids[j]);
-                        }
-                         
+                        }    
                     }
-                    
                 } 
             }
             if(boids[i] && boids[i].position.dist(mouseVector)<150) 
