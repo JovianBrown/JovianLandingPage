@@ -61,7 +61,6 @@ h2 {
 
 p {
     text-align: center;
-    text-indent: 50px;
 }
 .nav-container {
     background-color: #202020;
@@ -87,10 +86,15 @@ p {
     display:flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0px auto;
     color:white;
     text-align: center;
+    /* text-indent: 50px; */
+
+}
+#about-container p {
+    text-indent: 50px;
 
 }
 #about-image {
@@ -267,6 +271,10 @@ button:hover {
     .nav-container {
         justify-content: center;
         font-size: large;
+  }
+  #about-container {
+      max-width: fit-content;
+      padding: 20px
   }
   .skills-div {
       width: 50px;
