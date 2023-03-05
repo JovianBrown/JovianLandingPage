@@ -1,32 +1,40 @@
-
+// setup some globals 
 var boids = [];
 const totalBoids = 100;
 var navBar = document.getElementById("navigation");
-let mouseVector;
+var mouseVector;
+
+//////////
+
 function setup() 
 {
     //particles for the background of the website //////
     var myCanvas = createCanvas(windowWidth, windowHeight);
     myCanvas.parent("canvas-html");
-   
     var heading = document.querySelector(".heading");
     for(let i = 0; i < totalBoids; i++)
     {
         boids.push(new Boid());
     }
-   mouseVector = createVector(0,0);
+    mouseVector = createVector(0,0);
 }
+    
 const windowResized = () => {
     resizeCanvas(windowWidth, windowHeight);
-  }
+}
+  
+
 const connectBoid = (boidA, boidB) =>
 {
-  strokeWeight(.1);
-  line(boidA.position.x,boidA.position.y,boidB.position.x,boidB.position.y);
+    let c = color(71, 227, 255);  //  fill(c); 
+    strokeWeight(.1);
+    stroke(c);
+    line(boidA.position.x,boidA.position.y,boidB.position.x,boidB.position.y);
 
 }
 const connectBoidMouse = (boidA, mouseVector) => 
 {
+    
   strokeWeight(.1);
   line(boidA.position.x,boidA.position.y,mouseVector.x,mouseVector.y);
 
@@ -59,7 +67,9 @@ const drawBoids = () => {
                         if(distance < 100 && i!=j ) //if boids are close to each other
                         {                           //draw a line between the two 
                             /// need to draw a skinny line form i to j
+                            
                             connectBoid(boids[i],boids[j]);
+
                         }    
                     }
                 } 
@@ -77,13 +87,7 @@ const drawBoids = () => {
         boids.push(new Boid());
     }
 }
-function getHash(boidA,boidB)
-{
-    let preHashX1 = (boidA.position.x*500)+10000;
-    let preHashY1 = (boidA.position.y*500)+10000;
-    let preHashX2 = (boidB.position.x*500)+10000;
-    let preHashY2 = (boidB.position.y*500)+10000;
-}
+
 function draw() 
 {
     background(30);

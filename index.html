@@ -8,9 +8,6 @@
 
     <title>Landing Page</title>
 </head>
-
-<!-- <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script> -->
- <!-- <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
 
@@ -48,20 +45,21 @@
             <h1>About</h1>
         </div>
         
-            <img  id = "about-image" src= "images/jovian.png"  width = "170">
+            <img  id = "about-image" src= "images/profile.png"  width = "170">
            
 
         <p id = "about-desc">
                 Fully committed to life-long learning, 
             I’m a <strong>full stack developer and IT technician</strong> with a love for <strong>JavaScript, 
-            C++</strong>, and all things related to development. I have a passion for problem 
-            solving and creativity which drives my excitement for being productive. 
-            I've enjoyed working in places ranging from small start-ups to large enterprises.
-            When I’m not in front of my computer I like to spend my time reading, hanging out with friends and playing music.
+            C++</strong>, and all things related to software development. I have a passion for problem 
+            solving and a creative sense which drives my productivity. 
+            When I’m not in front of my computer I like to spend my time reading and recording music.
         </p>
-      
+        <button onclick="window.location.href = './images/JovianBrownResume2023.pdf'">Download my CV</button>
     </div>
+
     <div class = "skills-container">
+        
             <div class = "skills-div">
                 <img src = "images/github-icon.png" height = "100" width="100">
             </div>
@@ -87,12 +85,14 @@
     <div class = "project-container">
         <div class="project-desc">
             <h2>Machine Learning Race Cars</h2>
-            <p>I wrote an simple neural network in C++. The objective was to 
+            <p>A simple neural network in <strong>C++ and SDL2</strong>. The objective was to 
                 have vehicles be able to navigate a racetrack after several iterations.
             </p>
         </div>
         <div class = "project-links">
-            <a href  = "https://github.com/JovianBrown/RacingV3" >See Code</a>
+            <div class = "individual-project-link">
+                <a href  = "https://github.com/JovianBrown/RacingV3" >See Code</a>
+            </div>
         </div>
         <div class ="project-image">
             <a href = "https://github.com/JovianBrown/RacingV3">
@@ -100,67 +100,93 @@
             </a>
         </div>
     </div>   
-        <div class = "project-container">
-            <div class="project-desc">
-                <h2>Drum Sequencer</h2>
-                <p>A drum machine sequencer. Sampled drumkit using 2 SM-58s and a Rhodes NT-1
-                    Coded in vanilla Javascript, CSS and HTML.
-                </p>
-            </div>
-            <div class = "project-links">
+    <div class = "project-container">
+        <div class="project-desc">
+            <h2>Bee Swarm-Dash</h2>
+            <p>
+                A responsive dashboard for monitoring Ethereum Swarm network nodes. Frontend created in <strong>javascript,
+                HTML, CSS</strong> with a backend consisting of <strong>PHP, MYSQL and Apache</strong>. Nodes maintained in docker and deployed on Amazon Cloud.
+            </p>
+        </div>
+        <div class ="project-image">
+            
+                <img src = "images/beedash.png" class ="project-image" height = "auto" width="400">
+           
+        </div>
+    </div>   
+    <div class = "project-container">
+        <div class="project-desc">
+            <h2>Drum Sequencer</h2>
+            <p>A drum machine sequencer. Sampled drumkit using 2 SM-58s and a Rhodes NT-1
+                Coded in vanilla <strong>Javascript, CSS and HTML</strong>.
+            </p>
+        </div>
+        <div class = "project-links">
+            <div class = "individual-project-link">
                 <a href  = "https://jforodin.github.io/SequencerAndDrumkit/" >Live App</a>
+            </div>
+            <div class = "individual-project-link">
                 <a href  = "https://github.com/JForOdin/SequencerAndDrumkit" >See Code</a>
             </div>
-            <div class ="project-image">
-                <a href = "https://jforodin.github.io/SequencerAndDrumkit/">
-                    <img src = "images/sequencer.jpeg" class ="project-image" height = "auto" width="400">
-                </a>
-            </div>
-        </div>   
-        <div class = "project-container">
-            <div class="project-desc">
-                <h2>Pixel Art Creator</h2>
-                <p>Wrote a drawing program for making sprites and other small images.
-                    Coded in Javascript, CSS and HTML.
-                </p>
-            </div>
-            <div class = "project-links">
+        </div>
+        <div class ="project-image">
+            <a href = "https://jforodin.github.io/SequencerAndDrumkit/">
+                <img src = "images/sequencer.jpeg" class ="project-image" height = "auto" width="400">
+            </a>
+        </div>
+    </div>   
+    <div class = "project-container">
+        <div class="project-desc">
+            <h2>Pixel Art Creator</h2>
+            <p>A drawing program for making sprites and other small images.
+                    Coded in <strong>Javascript, CSS and HTML.</strong>
+            </p>
+        </div>
+        <div class = "project-links">
+            <div class = "individual-project-link">
                 <a href  = "https://JovianBrown.github.io/SpriteGen/" >Live App</a>
+            </div>
+            <div class = "individual-project-link">
                 <a href  = "https://github.com/JovianBrown/SpriteGen" >See Code</a>
             </div>
-            <div class ="project-image">
-                <a href = "https://JovianBrown.github.io/SpriteGen/">
-                    <img src = "images/spritegen.jpeg" class ="project-image" height = "auto" width="400">
-                </a>
-            </div>
-        </div>   
-        <div class = "project-container">
-            <div class="project-desc">
-                <h2>Etch-a-Sketch</h2>
-                <p>A super retro and cool Etch-A-Sketch
-                    Written in Javascript, CSS and HTML.
-                </p>
-            </div>
-            <div class = "project-links">
+        </div>
+        <div class ="project-image">
+            <a href = "https://JovianBrown.github.io/SpriteGen/">
+            <img src = "images/spritegen.jpeg" class ="project-image" height = "auto" width="400">
+            </a>
+        </div>
+    </div>   
+    <div class = "project-container">
+        <div class="project-desc">
+            <h2>Etch-a-Sketch</h2>
+            <p>A retro Etch-A-Sketch
+                Written in <strong>Javascript, CSS and HTML</strong>.
+            </p>
+        </div>
+        <div class = "project-links">
+            <div class="individual-project-link">
                 <a href  = "https://jforodin.github.io/Etch-a-Sketch/" >Live App</a>
+            </div>
+            <div class="individual-project-link">
                 <a href  = "https://github.com/JForOdin/Etch-a-Sketch" >See Code</a>
             </div>
-            <div class ="project-image">
-                <a href = "https://jforodin.github.io/Etch-a-Sketch/">
-                    <img src = "images/etch-a-sketch.png" class ="project-image" height = "auto" width="400">
-                </a>
-            </div>
-        </div>   
+        </div>
+        <div class ="project-image">
+            <a href = "https://jforodin.github.io/Etch-a-Sketch/">
+                <img src = "images/etch-a-sketch.png" class ="project-image" height = "auto" width="400">
+            </a>
+        </div>
+    </div>   
         <div id = "experience-header">
             <h1>Experience</h1>
         </div>
         <div id = "experience-div">
             <div class = "experience-item">
-                <h3>IValue - FullStack Dev</h3>
+                <h3>iValu - FullStack Dev</h3>
                 <h4>Chengdu - CN, 2021 - 2022</h4>
                 <p>Developed a web platform for the Bee Swarm decentralized storage project that allows easy administration 
                     and maintenance for over 500 nodes. Implemented on 100 <strong>Amazon Cloud</strong> instances.
-                    A secure platform that served Ivalu’s clients utilizing JAVASCRIPT/PHP/HTML/CSS/MYSQL/</p>
+                    A secure platform that served Ivalu’s clients utilizing JAVASCRIPT/PHP/HTML/CSS/MYSQL</p>
             </div>
             <div class = "experience-item">
                 <h3>ActiveNetwork - IT Technician III</h3>
@@ -169,7 +195,7 @@
                     Spent more than two years supporting ActiveNetwork both remotely and from the office 
                     in Chengdu with <strong>system administration and system engineering </strong>. Networks that I maintained 
                     included <strong>Windows-based VMs, and Unix and Mac OS X </strong>systems. Day to day user supported included: 
-                    Network performance troubleshooting, RSA administration for VPNs, ActiveDirectory tasks, Exchange Management Console to handle messaging 
+                    Network performance troubleshooting, RSA administration for VPNs, <strong>ActiveDirectory tasks, Exchange Management Console</strong> to handle messaging 
                     distribution groups as well as user profile permissions.
                 </p>
             </div>
@@ -187,7 +213,7 @@
                 <h4>Chengdu - CN, 2006 - 2009</h4>
                 <p>
                     Helped plan and implement the companies internal IT services as well as implemented and
-                    maintained all the backend Unix servers (security, Apache, mail servers, backup systems and CRM).
+                    maintained all the backend Unix servers (security, LAMP, backup systems and CRM).
                 </p>
             </div>
             <div class = "experience-item">
@@ -204,12 +230,19 @@
         <div class = "contact" id = "contact">
             <div id = "contact-header">
                 <h1>Contact</h1>
+                <div id = "contact-container">
+                    <div id = "contact-email"></div>
+                        <img src = "images/emailicon.png" width ="80" height = "80">
+                        Jovian.brown@gmail.com
+                    </div>
+                    <div id = "contact-linked-in"></div>
+                        <a href = "https://www.linkedin.com/in/jovian-jeremy-brown-92227214/"><img src = "images/linkedin.png" width ="80" height = "80"></a>
+                        <a href = "https://www.github.com/JovianBrown"><img src = "images/github-icon.png" width ="80" height = "80"></a>
+
+                    </div>
+                </div>
             </div>
-            <div>
-                <input type="text" id="email-message">
-               
-            </div>
-            <button>contact me</button>
+           
         </div>
         <div class = "footer">
             Made by <a href = "https://github.com/JovianBrown">Jovian Brown</a> 2023
