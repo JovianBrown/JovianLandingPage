@@ -11,6 +11,7 @@ function setup()
     //particles for the background of the website //////
     var myCanvas = createCanvas(windowWidth, windowHeight);
     myCanvas.parent("canvas-html");
+    
     var heading = document.querySelector(".heading");
     for(let i = 0; i < totalBoids; i++)
     {
