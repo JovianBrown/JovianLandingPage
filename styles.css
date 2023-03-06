@@ -23,10 +23,40 @@ body {
     text-align: center;
    
 }
+
 @keyframes headinglinkanim {
     from {color: white;}
    to {color: tomato;} 
  }
+ #heading-one {
+    text-align: center;
+
+    /* animation properties */
+    -webkit-transform: translateX(-150px);
+    transform: translateX(0px);
+    
+    -webkit-animation: heading-one-anim 1.0s ease-in;
+    animation: heading-one-anim 1.0s ease-out;
+    animation-duration: 1.0s;
+    /* margin-left: 300px; */
+ }
+ @-webkit-keyframes heading-one-anim {
+    from { -webkit-transform: translateX(-500px); 
+            opacity: .01;}
+    to { -webkit-transform: translateX(-0%); opacity: 1.0;}
+  }
+  #heading-two {
+    text-align: center;
+    -webkit-animation: heading-two-anim 1.0s ease-in;
+    animation: heading-two-anim 1.0s ease-out;
+    animation-duration: 1.0s;
+ }
+ @-webkit-keyframes heading-two-anim {
+    from { -webkit-transform: translateX(550px); 
+            opacity: .01;}
+    to { -webkit-transform: translateX(0%); opacity: 1.0;}
+  }
+  
 .heading-link {
     border:tomato solid 2px;
     padding: 10px;
@@ -58,7 +88,9 @@ h1 {
 h2 {
     text-align: center;
 }
-
+h3 {
+    text-align: center;
+}
 p {
     text-align: center;
 }
@@ -142,22 +174,23 @@ p {
     box-shadow:0 4px 4px rgb(0 0 0 / 30%);
     padding: 10px;
     max-width: 500px;
-    justify-content: flex-end;
-    margin: 0px auto;
+    /* justify-content: flex-end; */
+    /* margin: 0px auto; */
     z-index: 1;
+    margin-left: 500px;
 
 }
 .project-image {
-    max-width: 300px;
+    max-width: 600px;
     max-height: auto;
     padding-left: 30px;
     border-radius: 10px;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
 
 }
 .project-image:hover {
-    transform: scale(1.25) rotate(0.01deg);
-    transition-duration: 1.0s;
+    transform: scale(1.15) rotate(0.01deg);
+    transition-duration: .8s;
     margin-left: 4%;
 }
 
@@ -171,7 +204,6 @@ p {
     top: 330px;
     margin: 0px auto;
     display: flex;
-    /* padding: 10px; */
     gap: 10px;
     flex-direction: column;
     z-index: 1;
@@ -285,5 +317,14 @@ button:hover {
   .skills-div > img {
       width: 50px;
       height: auto;
+  }
+  .project-desc {
+      /* margin: 0px auto; */
+        margin-left: 0px;
+  }
+  .project-image {
+    max-width: 350px;
+    max-height: auto;
+    padding-left: 10px;
   }
 }
