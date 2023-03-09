@@ -127,15 +127,17 @@ p {
 }
 #about-container p {
     text-indent: 50px;
-    
 }
+
 #about-image {
     border-radius: 10px;
     flex: 1;
     max-width: 100%;
     max-height: auto;
     margin-bottom: 20px;
+   
 }
+
 
 .skills-container {
     display:flex;
@@ -302,7 +304,7 @@ button:hover {
 @media only screen and (max-width: 600px) {
     .nav-container {
         justify-content: center;
-        font-size: large;
+        font-size: small;
   }
   #about-container {
       max-width: fit-content;
@@ -327,4 +329,5 @@ button:hover {
     max-height: auto;
     padding-left: 10px;
   }
+ 
 }
