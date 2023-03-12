@@ -38,7 +38,6 @@ body {
     -webkit-animation: heading-one-anim 1.0s ease-in;
     animation: heading-one-anim 1.0s ease-out;
     animation-duration: 1.0s;
-    /* margin-left: 300px; */
  }
  @-webkit-keyframes heading-one-anim {
     from { -webkit-transform: translateX(-500px); 
@@ -155,8 +154,18 @@ p {
     border-radius: 30px;
     border: 2px solid transparent;
     width: 100px;
-}
 
+}
+.skills-div > * {
+    opacity: 0;
+    /* filter: blur(5px); */
+
+    transition: all 1s;
+    /* transform: translateX(-100%); */
+}
+.show {
+    opacity: 1;
+}
 #project-header {
     margin-bottom: -100px;
     padding-top: 30px;
@@ -267,8 +276,7 @@ button {
 }
 
 button:hover {
-    /* color: white; */
-    /* background-color: #383838; */
+
     background-color: white;
     color: black;
     opacity: 1.0;
@@ -319,7 +327,9 @@ button:hover {
   .skills-div > img {
       width: 50px;
       height: auto;
+
   }
+  
   .project-desc {
       /* margin: 0px auto; */
         margin-left: 0px;

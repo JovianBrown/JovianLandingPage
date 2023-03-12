@@ -3,11 +3,25 @@ var boids = [];
 const totalBoids = 100;
 var navBar = document.getElementById("navigation");
 var mouseVector;
-
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add("show");
+        }
+        else
+        {
+            entry.target.classList.remove("show");
+        }
+    })
+});
+const hiddenElements = document.querySelectorAll(".skills-div > *");
+hiddenElements.forEach((el) => observer.observe(el));
 //////////
 
 function setup() 
 {
+    window.scrollTo(0,0); 
     //particles for the background of the website //////
     var myCanvas = createCanvas(windowWidth, windowHeight);
     myCanvas.parent("canvas-html");
@@ -18,6 +32,7 @@ function setup()
         boids.push(new Boid());
     }
     mouseVector = createVector(0,0);
+
 }
     
 const windowResized = () => {
