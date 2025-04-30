@@ -1,7 +1,7 @@
 // setup some globals 
 var boids = [];
-const totalBoids = 100;
-var navBar = document.getElementById("navigation");
+const totalBoids = 100; //total particle count
+var navBar = document.getElementById("navigation"); 
 var mouseVector;
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -29,7 +29,7 @@ function setup()
     var heading = document.querySelector(".heading");
     for(let i = 0; i < totalBoids; i++)
     {
-        boids.push(new Boid());
+        boids.push(new Boid()); //add new boid particle 
     }
     mouseVector = createVector(0,0);
 
@@ -45,7 +45,7 @@ const connectBoid = (boidA, boidB) =>
     let c = color(71, 227, 255);  //  fill(c); 
     strokeWeight(.1);
     stroke(c);
-    line(boidA.position.x,boidA.position.y,boidB.position.x,boidB.position.y);
+    line(boidA.position.x,boidA.position.y,boidB.position.x,boidB.position.y); //create a line between the 2 boids
 
 }
 const connectBoidMouse = (boidA, mouseVector) => 
